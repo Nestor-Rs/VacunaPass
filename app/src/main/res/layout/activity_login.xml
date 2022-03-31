@@ -9,18 +9,6 @@
     tools:context=".Login"
     >
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/fracmentPreregistro"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
-
     <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -98,7 +86,7 @@
                 android:textColor="#208089"
                 />
             <Space
-                android:layout_width="50dp"
+                android:layout_width="10dp"
                 android:layout_height="match_parent"
                 />
             <Button

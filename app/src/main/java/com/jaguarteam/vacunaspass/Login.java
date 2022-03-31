@@ -76,9 +76,6 @@ public class Login extends AppCompatActivity {
                                 }
                             });
                 }
-
-                Intent mainMenu = new Intent(this,MainMenu.class);
-                startActivity(mainMenu);
                 break;
             case R.id.recuperaCuenta:
                 Intent recuperarCuenta = new Intent(this,RecuperarCuenta.class);

@@ -5,19 +5,166 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#b9cbc0"
     tools:context=".ui.home.HomeFragment" >
 
-    <TextView
-        android:id="@+id/text_home"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_gravity="center"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                />
+            <TextView
+                android:id="@+id/nombreMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha de nacimiento:"
+                android:textColor="#061216"
+                android:textSize="20dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                />
+            <TextView
+                android:id="@+id/fechaNacimietoMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacio"
+                android:textColor="#0f394d"
+                android:textSize="16dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Peso al nacer:"
+                android:textColor="#061216"
+                android:textSize="20dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                />
+            <TextView
+                android:id="@+id/pesonacimientoMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacio"
+                android:textColor="#0f394d"
+                android:textSize="16dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Genero:"
+                android:textColor="#061216"
+                android:textSize="20dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                />
+            <TextView
+                android:id="@+id/generoMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacio"
+                android:textColor="#0f394d"
+                android:textSize="16dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edad Gestacional:"
+                android:textColor="#061216"
+                android:textSize="20dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                />
+            <TextView
+                android:id="@+id/edadGestalMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacio"
+                android:textColor="#0f394d"
+                android:textSize="16dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de sangre"
+                android:textColor="#061216"
+                android:textSize="20dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                />
+            <TextView
+                android:id="@+id/tipoSangineoMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vacio"
+                android:textColor="#0f394d"
+                android:textSize="16dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

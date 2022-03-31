@@ -108,7 +108,7 @@ public class RegistroCuenta extends AppCompatActivity {
                             crearDocumentoDatos(user);
                         } else {
                             // If sign in fails, display a message to the user.
-                            Log.w("Error con el registro", "createUserWithEmail:failure", task.getException());
+                            Logger.w("Error con el registro", "createUserWithEmail:failure", task.getException());
                             Toast.makeText(RegistroCuenta.this, "Error al crear la cuenta",
                                     Toast.LENGTH_SHORT).show();
                         }
