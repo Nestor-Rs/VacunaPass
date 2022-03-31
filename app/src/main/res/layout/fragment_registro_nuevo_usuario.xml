@@ -47,7 +47,7 @@
                 android:textSize="20dp" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nombre"
+                android:id="@+id/nombreR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -57,7 +57,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/apellidoP"
+                android:id="@+id/apellidoPR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -67,7 +67,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/apellidoM"
+                android:id="@+id/apellidoMR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -75,9 +75,8 @@
                 android:hint="Apellido materno*"
                 android:inputType="textPersonName"
                 tools:ignore="SpeakableTextPresentCheck" />
-            <!--TODO: Crear un recycler view para genero-->
             <Spinner
-                android:id="@+id/genero"
+                android:id="@+id/generoR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -86,7 +85,7 @@
                 />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fechaNacimieto"
+                android:id="@+id/fechaNacimietoR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -104,7 +103,7 @@
                 android:textSize="20dp" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/pesoNacimiento"
+                android:id="@+id/pesoNacimientoR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -114,7 +113,7 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edadGestal"
+                android:id="@+id/edadGestalR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -123,9 +122,8 @@
                 android:inputType="number"
                 tools:ignore="SpeakableTextPresentCheck" />
 
-            <!--TODO: Crear un recycler view para tipo de sangre-->
             <Spinner
-                android:id="@+id/tipoSangineo"
+                android:id="@+id/tipoSangineoR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -140,7 +138,7 @@
                 android:textColor="#061216"
                 android:textSize="20dp" />
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nuevoCorreo"
+                android:id="@+id/nuevoCorreoR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
@@ -150,18 +148,20 @@
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/nuevoContrasena"
+                android:id="@+id/nuevoContrasenaR"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginBottom="25dp"
                 android:background="#81A8A4"
                 android:hint="Contrasena*"
-                android:inputType="textPersonName"
+                android:inputType="textPassword"
                 tools:ignore="SpeakableTextPresentCheck" />
             <Button
+                android:id="@+id/Registrar"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:backgroundTint="#061216"
+                android:onClick="onClick"
                 android:text="Registrar" />
         </LinearLayout>
     </ScrollView>

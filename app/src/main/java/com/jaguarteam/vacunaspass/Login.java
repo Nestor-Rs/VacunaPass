@@ -33,9 +33,6 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         Logger.addLogAdapter(new AndroidLogAdapter());
 
-
-
-
         mAuth = FirebaseAuth.getInstance();
 
         correo = findViewById(R.id.correo);
@@ -49,7 +46,7 @@ public class Login extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
             // User is signed in
-            //updateUI(user);
+            updateUI(user);
         }
 
     }

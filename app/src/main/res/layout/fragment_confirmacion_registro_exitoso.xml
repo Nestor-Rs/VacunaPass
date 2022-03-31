@@ -13,12 +13,13 @@
         android:layout_margin="16dp">
 
         <ImageButton
-            android:id="@+id/exitCGR"
+            android:id="@+id/exitCRE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:ignore="SpeakableTextPresentCheck"
             android:src="@drawable/cancel48"
             android:background="@drawable/cancel48"
+            android:onClick="onClick"
             />
         <Space
             android:layout_width="match_parent"
@@ -41,6 +42,7 @@
             android:textAlignment="center"
             android:textSize="20dp" />
         <TextView
+            android:id="@+id/nombreCRE"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"

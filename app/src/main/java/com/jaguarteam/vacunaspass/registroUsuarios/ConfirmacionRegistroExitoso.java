@@ -7,31 +7,31 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.jaguarteam.vacunaspass.R;
+import com.jaguarteam.vacunaspass.localData.User;
 
 
 public class ConfirmacionRegistroExitoso extends Fragment {
 
-
-
-    public ConfirmacionRegistroExitoso() {
-        // Required empty public constructor
-    }
-
-    // TODO: Rename and change types and number of parameters
-    public static ConfirmacionRegistroExitoso newInstance(String param1, String param2) {
-        ConfirmacionRegistroExitoso fragment = new ConfirmacionRegistroExitoso();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
+    User myUser;
+    public ConfirmacionRegistroExitoso(User user) {
+        myUser=user;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-        }
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        TextView miNombre = getActivity().findViewById(R.id.nombreCRE);
+        miNombre.setText(myUser.getNombre()+" "+myUser.getApellidoP()+" "+myUser.getApellidoM());
     }
 
     @Override
