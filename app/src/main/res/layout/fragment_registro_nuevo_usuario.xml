@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9cbc0"
+    tools:context=".registroUsuarios.RegistroNuevoUsuario">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/exitRegistro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back48"
+                android:src="@drawable/back48"
+                android:onClick="onClick"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#061216"
+                android:layout_gravity="center"
+                android:src="@drawable/addphoto64"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Informacion general"
+                android:textColor="#061216"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombre"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Nombre*"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/apellidoP"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Apellido paterno*"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/apellidoM"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Apellido materno*"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <!--TODO: Crear un recycler view para genero-->
+            <Spinner
+                android:id="@+id/genero"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                tools:ignore="SpeakableTextPresentCheck"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fechaNacimieto"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Fecha de nacimiento*"
+                android:inputType="date"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Informacion de tu nacimiento"
+                android:textColor="#061216"
+                android:textSize="20dp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pesoNacimiento"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Peso al nace Kg*"
+                android:inputType="numberDecimal"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edadGestal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Edad gestal*"
+                android:inputType="number"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <!--TODO: Crear un recycler view para tipo de sangre-->
+            <Spinner
+                android:id="@+id/tipoSangineo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Informacion de inicio de sesion"
+                android:textColor="#061216"
+                android:textSize="20dp" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nuevoCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Correo*"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nuevoContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="25dp"
+                android:background="#81A8A4"
+                android:hint="Contrasena*"
+                android:inputType="textPersonName"
+                tools:ignore="SpeakableTextPresentCheck" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#061216"
+                android:text="Registrar" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

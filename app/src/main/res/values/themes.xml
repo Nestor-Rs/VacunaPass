@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VacunasPass" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#b9cbc0</item>
+        <item name="colorPrimaryVariant">#81a8a4</item>
+        <item name="colorOnPrimary">#b9cbc0</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#208089</item>
+        <item name="colorSecondaryVariant">#0f394d</item>
+        <item name="colorOnSecondary">#061216</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>

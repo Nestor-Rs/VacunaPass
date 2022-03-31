@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9cbc0"
+    tools:context=".registroUsuarios.ConfirmacionHacerRegistro">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <ImageButton
+            android:id="@+id/exitCHR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:src="@drawable/cancel48"
+            android:background="@drawable/cancel48"
+            android:onClick="onClick"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Iniciemos creando tu cuenta"
+            android:textColor="#061216"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="posteriormente podras registrar a tus familiares \n (hijos, padres o cualquierfamiliar)"
+            android:textColor="#81a8a4"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            />
+        <Button
+            android:id="@+id/comenzarCHR"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="#061216"
+            android:onClick="onClick"
+            android:text="Comenzar" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</FrameLayout>

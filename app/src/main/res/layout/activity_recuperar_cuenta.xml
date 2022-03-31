@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9cbc0"
+    tools:context=".RecuperarCuenta">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:id="@+id/exitRecuperar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back48"
+                android:src="@drawable/back48"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:onClick="onClick"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher_background"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Recuperar cuenta"
+                android:textAlignment="center"
+                android:textColor="#061216"
+                android:textSize="24dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/correoRecuperacion"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#81A8A4"
+                android:hint="Correo electronico*"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:layout_marginBottom="25dp"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                />
+            <Button
+                android:id="@+id/recuperar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Recuperar"
+                android:backgroundTint="#061216"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

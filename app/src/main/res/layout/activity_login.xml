@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b9cbc0"
+    tools:context=".Login"
+    >
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fracmentPreregistro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/ic_launcher_background"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/bienvenido"
+            android:textAlignment="center"
+            android:textColor="#061216"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#81A8A4"
+            android:hint="@string/correo_electronico"
+            android:inputType="textEmailAddress"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_marginBottom="25dp"
+            />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/contrasena"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#81A8A4"
+            android:hint="@string/contrase_a"
+            android:inputType="textPassword"
+            tools:ignore="SpeakableTextPresentCheck"
+            android:layout_marginBottom="25dp"
+            />
+        <Button
+            android:id="@+id/inicioSesion"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/iniciar_sesion"
+            android:backgroundTint="#061216"
+            android:onClick="onClick"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/recordar_cuenta"
+                android:textColor="#208089"
+                />
+            <Space
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                />
+            <Button
+                android:id="@+id/recuperaCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/recuperar_cuneta"
+                android:textAlignment="textEnd"
+                android:backgroundTint="#b9cbc0"
+                android:textColor="#208089"
+                android:onClick="onClick"
+                />
+        </LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            />
+        <Button
+            android:id="@+id/registrarse"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/registrarse"
+            android:backgroundTint="#b9cbc0"
+            android:textColor="#208089"
+            android:onClick="onClick"
+            />
+    </LinearLayout>
+</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
