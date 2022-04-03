@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardview"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:backgroundTint="#81a8a4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher"
+            android:maxHeight="200dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            />
+
+        <TextView
+            android:id="@+id/tituloNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Una noticia super importante"
+            android:textColor="#061216"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+        <androidx.slidingpanelayout.widget.SlidingPaneLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+        <TextView
+            android:id="@+id/fechaNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="esta es la fecha de publicacion"
+            android:textSize="16dp"
+            android:textColor="#0f394d"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+        />
+        <androidx.slidingpanelayout.widget.SlidingPaneLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+
+        <TextView
+            android:id="@+id/textoNoticia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mucho texto de forma de publicacion"
+            android:textSize="20dp"
+            android:textColor="#0f394d"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+        <androidx.slidingpanelayout.widget.SlidingPaneLayout
+            android:layout_width="match_parent"
+            android:layout_height="16dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
