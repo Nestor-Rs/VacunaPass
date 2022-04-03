@@ -10,7 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="16dp"
+
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,24 +22,24 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-
             <de.hdodenhof.circleimageview.CircleImageView
-                android:layout_width="150dp"
+                android:layout_width="match_parent"
                 android:layout_height="150dp"
                 android:src="@drawable/ic_launcher_background"
                 android:layout_gravity="center"
+                android:paddingTop="16dp"
+                android:background="#061216"
                 />
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="16dp"
-                />
+
             <TextView
                 android:id="@+id/nombreMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Nombre"
+                android:paddingTop="16dp"
                 android:textAlignment="center"
                 android:textColor="@color/white"
+                android:background="#061216"
                 android:textSize="20dp"
                 />
             <Space
@@ -51,6 +51,8 @@
                 android:layout_height="wrap_content"
                 android:text="Fecha de nacimiento:"
                 android:textColor="#061216"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textSize="20dp"
                 />
             <Space
@@ -64,6 +66,8 @@
                 android:text="Vacio"
                 android:textColor="#0f394d"
                 android:textSize="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 />
             <Space
                 android:layout_width="match_parent"
@@ -74,6 +78,8 @@
                 android:layout_height="wrap_content"
                 android:text="Peso al nacer:"
                 android:textColor="#061216"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textSize="20dp"
                 />
             <Space
@@ -86,6 +92,8 @@
                 android:layout_height="wrap_content"
                 android:text="Vacio"
                 android:textColor="#0f394d"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textSize="16dp"
                 />
             <Space
@@ -96,6 +104,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Genero:"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textColor="#061216"
                 android:textSize="20dp"
                 />
@@ -108,6 +118,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Vacio"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textColor="#0f394d"
                 android:textSize="16dp"
                 />
@@ -119,6 +131,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Edad Gestacional:"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textColor="#061216"
                 android:textSize="20dp"
                 />
@@ -130,6 +144,8 @@
                 android:id="@+id/edadGestalMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:text="Vacio"
                 android:textColor="#0f394d"
                 android:textSize="16dp"
@@ -142,6 +158,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Tipo de sangre"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:textColor="#061216"
                 android:textSize="20dp"
                 />
@@ -153,6 +171,8 @@
                 android:id="@+id/tipoSangineoMenu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
                 android:text="Vacio"
                 android:textColor="#0f394d"
                 android:textSize="16dp"

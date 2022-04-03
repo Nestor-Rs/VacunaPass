@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/drawable/side_nav_bar.xml" value="0.2169230769230769" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/activity_main_menu.xml" value="0.19519927536231885" />
@@ -10,6 +11,8 @@
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/activity_registro_cartilla.xml" value="0.36666666666666664" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/activity_registro_cuenta.xml" value="0.25" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/activity_test.xml" value="0.36666666666666664" />
+        <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/app_bar_main_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/content_main_menu_drawer.xml" value="0.20416666666666666" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/fragment_confirmacion_hacer_registro.xml" value="0.22" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/fragment_confirmacion_registro_exitoso.xml" value="0.22" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
@@ -17,9 +20,12 @@
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/fragment_notifications.xml" value="0.33" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/fragment_registro.xml" value="0.19519927536231885" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/fragment_registro_nuevo_usuario.xml" value="0.19519927536231885" />
+        <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/nav_header_main_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/tarjeta_noticias.xml" value="0.20416666666666666" />
+        <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/layout/tarjeta_vacuna.xml" value="0.25" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/menu/bottom_nav_menu.xml" value="0.2" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/menu/drawe_menu.xml" value="0.20416666666666666" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/menu/genero.xml" value="0.20416666666666666" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/menu/sangre.xml" value="0.20416666666666666" />
         <entry key="..\:/Codigos/AndroidStudioProjects/VacunasPass/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.11302083333333333" />
