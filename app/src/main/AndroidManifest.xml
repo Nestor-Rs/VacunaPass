@@ -15,6 +15,9 @@
         android:theme="@style/Theme.VacunasPass"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".VistaVacuna"
+            android:exported="false" />
+        <activity
             android:name=".registroCartilla.CrearCartilla"
             android:exported="false" />
         <activity
