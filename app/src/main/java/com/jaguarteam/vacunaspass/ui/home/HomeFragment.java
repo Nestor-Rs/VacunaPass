@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -19,29 +20,28 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.jaguarteam.vacunaspass.R;
 import com.jaguarteam.vacunaspass.databinding.FragmentHomeBinding;
+import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
 public class HomeFragment extends Fragment {
 
-    private HomeViewModel homeViewModel;
-    private FragmentHomeBinding binding;
+    private View view;
     //Creacion de usuario con FireAuht
     private FirebaseAuth mAuth;
     //firestore
     private FirebaseFirestore db;
+    //Button
+    ImageButton nuevaCartilla;
     //textos
     TextView nombre,fechaNacimiento,peso,genero,edadG,tipoSangre;
 
-    public View onCreateView(@NonNull LayoutInflater inflater,
-                             ViewGroup container, Bundle savedInstanceState) {
-        homeViewModel =
-                new ViewModelProvider(this).get(HomeViewModel.class);
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
-        View root = binding.getRoot();
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.fragment_home,container,false);
+        Logger.addLogAdapter(new AndroidLogAdapter());
 
 
 
-        return root;
+        return view;
     }
 
     @Override
@@ -60,7 +60,6 @@ public class HomeFragment extends Fragment {
     @Override
     public void onDestroyView() {
         super.onDestroyView();
-        binding = null;
     }
 
     public void initTextviews(){

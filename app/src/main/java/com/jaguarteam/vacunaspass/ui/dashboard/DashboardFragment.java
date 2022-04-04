@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -45,7 +47,7 @@ public class DashboardFragment extends Fragment {
     MyAdapterVacunas  adapter;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_notifications,container,false);
+        View view = inflater.inflate(R.layout.fragment_dashboard,container,false);
 
         Logger.addLogAdapter(new AndroidLogAdapter());
         vacunas = new ArrayList<VacunasCartilla>();
@@ -70,7 +72,7 @@ public class DashboardFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         vacunas.clear();
-        //getVacunas();
+        getVacunas();
     }
 
     private void getVacunas() {
@@ -80,16 +82,22 @@ public class DashboardFragment extends Fragment {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()){
+                    String vacuna,fecha,lote,doctor,lugar,domicilio;
                     for (QueryDocumentSnapshot document : task.getResult()) {
-                        //Logger.d(document.getId());
-                        vacunas.add(
-                                new VacunasCartilla(
-                                        getVacuna(),
-                                        document.getData().get("fechaAplicacion").toString(),
-                                        document.getData().get("numeroLote").toString(),
-                                        document.getData().get("doctor").toString(),
-                                        document.getData().get("centroAplicacion").toString(),
-                                        document.getData().get("domicilio").toString()
+                        vacuna=document.getData().get("Vacuna").toString();
+                        fecha=document.getData().get("fechaAplicacion").toString();
+                        lote=document.getData().get("numeroLote").toString();
+                        doctor=document.getData().get("doctor").toString();
+                        lugar=document.getData().get("centroAplicacion").toString();
+                        domicilio=document.getData().get("domicilio").toString();
+
+                        vacunas.add( new VacunasCartilla(
+                                new Vacunas("Covid","6 meses","Simi"),
+                                fecha,
+                                lote,
+                                doctor,
+                                lugar,
+                                domicilio
                                 )
                         );
                     }
@@ -100,31 +108,6 @@ public class DashboardFragment extends Fragment {
                 }
             }
         });
-    }
-
-    public Vacunas getVacuna(){
-        final Vacunas[] myVacuna = new Vacunas[1];
-        db.collection("NombresVacunas").get()
-                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                    @Override
-                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
-                        if (task.isSuccessful()){
-                            Vacunas vacunas = null;
-                            for (QueryDocumentSnapshot document : task.getResult()) {
-                                vacunas = new Vacunas(
-                                        document.getData().get("nombreVacuna").toString(),
-                                        document.getData().get("esquema").toString(),
-                                        document.getData().get("marca").toString()
-                                );
-                            }
-                            myVacuna[0] =vacunas;
-                        }
-                        else {
-                            Logger.w("FireError", "Error getting documents.", task.getException());
-                        }
-                    }
-                });
-        return myVacuna[0];
     }
 
     @Override

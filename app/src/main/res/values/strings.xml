@@ -16,4 +16,6 @@
     <!-- Textos de main Menu -->
     <string name="activityActual">a</string>
     <string name="nombreUsuario">Nombre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

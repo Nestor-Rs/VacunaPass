@@ -1,6 +1,7 @@
 package com.jaguarteam.vacunaspass;
 
 
+import android.content.Intent;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -26,6 +27,7 @@ import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 import com.jaguarteam.vacunaspass.databinding.ActivityMainMenuBinding;
 import com.jaguarteam.vacunaspass.localData.User;
+import com.jaguarteam.vacunaspass.registroCartilla.CrearCartilla;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
@@ -131,5 +133,14 @@ public class MainMenu extends AppCompatActivity {
         View header =  binding.navViewDrawer.getHeaderView(0);
         TextView nombreDrawe = header.findViewById(R.id.nombreDrawer);
         nombreDrawe.setText(myUser.getNombre()+" "+myUser.getApellidoP()+" "+myUser.getApellidoM());
+    }
+
+    public void onClick(View view){
+        switch (view.getId()) {
+            case R.id.addCartilla:
+                Intent nuevaCartilla = new Intent(this, CrearCartilla.class);
+                startActivity(nuevaCartilla);
+                break;
+        }
     }
 }

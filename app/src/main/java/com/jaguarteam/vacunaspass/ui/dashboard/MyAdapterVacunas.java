@@ -3,6 +3,7 @@ package com.jaguarteam.vacunaspass.ui.dashboard;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -40,12 +41,16 @@ public class MyAdapterVacunas  extends RecyclerView.Adapter<MyAdapterVacunas.Vie
 
     class  ViewHolder extends RecyclerView.ViewHolder {
 
+        TextView textNombreVacuna;
+
         ViewHolder(View itemView){
             super(itemView);
         }
 
         public  void bindItems(VacunasCartilla publicacion){
             //Tomar todos los item view
+            textNombreVacuna = itemView.findViewById(R.id.nombreVacunaView);
+            textNombreVacuna.setText(publicacion.getVacuna().getNombre());
         }
     }
 
