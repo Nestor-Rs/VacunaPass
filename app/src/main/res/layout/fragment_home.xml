@@ -41,6 +41,7 @@
                 android:textColor="@color/white"
                 android:background="#061216"
                 android:textSize="20dp"
+                android:paddingBottom="10dp"
                 />
             <Space
                 android:layout_width="match_parent"

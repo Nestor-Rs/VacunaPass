@@ -1,4 +1,4 @@
-package com.jaguarteam.vacunaspass.ui.dashboard;
+package com.jaguarteam.vacunaspass.registroVacuna;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,28 +8,26 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.jaguarteam.vacunaspass.R;
-import com.jaguarteam.vacunaspass.localData.Publication;
 import com.jaguarteam.vacunaspass.localData.Vacunas;
-import com.jaguarteam.vacunaspass.localData.VacunasCartilla;
 
 import java.util.ArrayList;
 
-public class MyAdapterVacunas  extends RecyclerView.Adapter<MyAdapterVacunas.ViewHolder>{
+public class MyAdapterNuevaVacuna extends RecyclerView.Adapter<MyAdapterNuevaVacuna.ViewHolder>{
 
-    ArrayList<VacunasCartilla> publicacionList;
+    ArrayList<Vacunas> publicacionList;
 
-    MyAdapterVacunas(ArrayList<VacunasCartilla> publicacionList){
+    MyAdapterNuevaVacuna(ArrayList<Vacunas> publicacionList){
         super();
         this.publicacionList=publicacionList;
     }
     @NonNull
     @Override
-    public MyAdapterVacunas.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.tarjeta_vacuna,parent,false));
+    public MyAdapterNuevaVacuna.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new MyAdapterNuevaVacuna.ViewHolder(LayoutInflater.from(parent.getContext()).inflate(R.layout.tarjeta_noticias,parent,false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyAdapterVacunas.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MyAdapterNuevaVacuna.ViewHolder holder, int position) {
         holder.bindItems(publicacionList.get(position));
     }
 
@@ -44,7 +42,7 @@ public class MyAdapterVacunas  extends RecyclerView.Adapter<MyAdapterVacunas.Vie
             super(itemView);
         }
 
-        public  void bindItems(VacunasCartilla publicacion){
+        public  void bindItems(Vacunas publicacion){
             //Tomar todos los item view
         }
     }
